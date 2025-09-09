@@ -109,3 +109,5 @@ Pull requests are welcome! For major changes, please open an issue first to disc
 ## Contact
 
 For questions or support, please open an issue on.
+
+Ojas Teredesai
