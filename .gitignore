@@ -1,0 +1,34 @@
+﻿################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+/.vs
+/CrickPalApi/bin
+/CrickPalApi/obj
+/CrickPalService/bin
+/CrickPalService/obj
+/CrickPalApi/CrickPalApi.csproj.user
+/CrickPalService/CrickPalService.csproj.user
+/CrickPalApi/Properties/PublishProfiles
+/CrickPalService/Properties/PublishProfiles/FolderProfile.pubxml
+/CrickPalAdmin/bin
+/CrickPalAdmin/obj
+/CrickPalService/Properties/PublishProfiles
+/CrickPalService/runtimes
+/CrickpalDataSyncService/obj
+/CrickpalDataSyncService/bin
+/CrickpalDataSyncService/runtimes
+/CrickpalDataSyncService/Properties/PublishProfiles
+/CrickpalDataSyncService/obj/Debug/net7.0/apphost.exe
+/CrickpalDataSyncService/obj/Debug/net7.0/CrickpalDataSyncService.assets.cache
+/CrickpalDataSyncService/obj/CrickpalDataSyncService.csproj.nuget.dgspec.json
+/CrickpalDataSyncService/obj/CrickpalDataSyncService.csproj.nuget.g.props
+/CrickpalDataSyncService/obj/project.assets.json
+
+/CrickpalAPI2024/bin
+/CrickpalAPI2024/obj
+/CrickpalAPI2024/CrickpalAPI2024.csproj.user
+*.json
+/CrickpalAPI2024/Properties/PublishProfiles/crickpal-uat-api - Web Deploy.pubxml.user
+/CrickpalAPI2024/Properties/PublishProfiles/FolderProfile1.pubxml.user
+/CrickpalDataSyncService/appsettings.json
