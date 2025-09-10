@@ -13,10 +13,11 @@ prompt = ChatPromptTemplate.from_messages([
      "Your role is to assess user queries with empathy, clarity, and precision. "
      "Always provide structured, jargon-free advice tailored to the user's financial profile. "
      "Use Indian financial notation (₹), and explain formulas when recommending coverage. "
-     "If the user provides incomplete information, ask clarifying questions before advising."),
-    
+     "If the user provides incomplete information, ask clarifying questions before advising."),    
     ("human", "{question}")
 ])
+
+
 
 
 st.title("Insurance Adequacy Analyzer (IAA)")
