@@ -1,16 +1,18 @@
 import os
 import streamlit as st
+from langchain_community.chat_message_histories import StreamlitChatMessageHistory
 from langchain_openai import ChatOpenAI
 from langchain.prompts import ChatPromptTemplate, MessagesPlaceholder
-from langchain_community.chat_message_histories import StreamlitChatMessageHistory
 from langchain_core.runnables.history import RunnableWithMessageHistory
 from langchain_core.runnables import RunnableConfig
+from langchain_ollama import ChatOllama  # ✅ Correct
 
 # 🔐 Load API key
 OPENAI_API_KEY = os.getenv("OPENAI_API_KEY")
 
 # 🤖 Model
-llm = ChatOpenAI(model="gpt-4o", api_key=OPENAI_API_KEY)
+#llm = ChatOpenAI(model="gpt-4o", api_key=OPENAI_API_KEY)
+llm1=ChatOllama(model="mistral:latest")  # Removed or comment out since ChatOllama is not defined/imported
 
 # 🧠 Prompt with history placeholder
 prompt = ChatPromptTemplate.from_messages([
@@ -25,7 +27,7 @@ prompt = ChatPromptTemplate.from_messages([
 ])
 
 # 🔗 Chain
-chain = prompt | llm
+chain = prompt | llm1
 
 # 💬 Chat history stored in Streamlit session state
 chat_history = StreamlitChatMessageHistory(key="chat_messages")
